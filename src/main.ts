@@ -1,15 +1,7 @@
-import { bootstrap } from '@angular/platform-browser-dynamic';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
-// Use the new (>rc2) Angular 2 forms
-import {
-  disableDeprecatedForms,
-  provideForms,
-} from '@angular/forms';
-import { AppComponent } from './app/app.component';
+import { AppModule } from './app/app.module';
 if (process.env.ENV === 'production') {
   enableProdMode();
 }
-bootstrap(AppComponent, [
-  disableDeprecatedForms(),
-  provideForms(),
-]);
+platformBrowserDynamic().bootstrapModule(AppModule);
