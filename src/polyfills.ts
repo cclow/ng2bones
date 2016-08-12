@@ -1,7 +1,6 @@
 import 'core-js/es6';
 import 'reflect-metadata';
 require('zone.js/dist/zone');
-require('web-animations-js/web-animations.min.js');
 if (process.env.ENV === 'production') {
   // Production
 } else {
