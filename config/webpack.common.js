@@ -5,6 +5,7 @@ let helpers = require('./helpers');
 
 module.exports = {
   entry: {
+    'bootstrap-loader': 'bootstrap-loader/loader.js',
     'polyfills': './src/polyfills.ts',
     'vendor': './src/vendor.ts',
     'app': './src/main.ts',
@@ -47,6 +48,10 @@ module.exports = {
     }),
     new HtmlPlugin({
       template: 'src/index.html'
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
     })
   ]
-}
+};
