@@ -22,8 +22,8 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: 'null'
+        loader: 'raw-loader'
       }
     ]
   }
-}
+};
