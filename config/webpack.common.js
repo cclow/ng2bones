@@ -1,14 +1,14 @@
-let webpack = require('webpack');
-let HtmlPlugin = require('html-webpack-plugin');
-let ExtractTextPlugin = require('extract-text-webpack-plugin');
-let helpers = require('./helpers');
+var webpack = require('webpack');
+var HtmlPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var helpers = require('./helpers');
 
 module.exports = {
   entry: {
     'bootstrap-loader': 'bootstrap-loader/loader.js',
     'polyfills': './src/polyfills.ts',
     'vendor': './src/vendor.ts',
-    'app': './src/main.ts',
+    'app': './src/main.ts'
   },
 
   resolve: {
