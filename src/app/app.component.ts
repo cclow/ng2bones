@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-app',
+  selector: 'app-root',
   template: `
 <h1>Angular 2 App with Webpack</h1>
 `,
