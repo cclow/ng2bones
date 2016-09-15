@@ -5,8 +5,7 @@ var helpers = require('./helpers');
 
 module.exports = {
   entry: {
-    'polyfills': './src/polyfills.ts',
-    'vendor': './src/vendor.ts',
+    'bundles': './src/bundles.ts',
     'app': './src/app.ts'
   },
 
@@ -46,8 +45,7 @@ module.exports = {
     new webpack.optimize.CommonsChunkPlugin({
       name: [
         'app',
-        'vendor',
-        'polyfills',
+        'bundles',
       ]
     }),
     // Insert bundles into index.html
