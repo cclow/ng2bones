@@ -22,7 +22,8 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        loader: 'html'
+        loader: 'html',
+        exclude: 'index.html'
       },
       {
         test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
@@ -43,8 +44,13 @@ module.exports = {
 
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
-      name: ['app', 'vendor', 'polyfills']
+      name: [
+        'app',
+        'vendor',
+        'polyfills',
+      ]
     }),
+    // Insert bundles into index.html
     new HtmlPlugin({
       template: 'src/index.html'
     }),

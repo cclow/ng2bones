@@ -17,5 +17,10 @@
       "core-js",
       "karma-jasmine"
     ]
-  }
+  },
+  "compileOnSave": false,
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
