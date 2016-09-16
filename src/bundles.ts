@@ -15,8 +15,6 @@ if (process.env.ENV === 'production') {
 // so don't import them here
 // Other vendors for example jQuery, Lodash or Bootstrap
 // You can import js, ts, css, sass, ...
-var $ =  require('jquery');
-require('bootstrap-loader/loader.js');
 
 // load assets
 require('./favicon.ico');
