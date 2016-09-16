@@ -15,6 +15,7 @@ if (process.env.ENV === 'production') {
 // so don't import them here
 // Other vendors for example jQuery, Lodash or Bootstrap
 // You can import js, ts, css, sass, ...
+import 'hammerjs';
 
 // load assets
 require('./favicon.ico');
