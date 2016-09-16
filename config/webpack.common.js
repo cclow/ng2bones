@@ -51,10 +51,6 @@ module.exports = {
     // Insert bundles into index.html
     new HtmlPlugin({
       template: 'src/index.html'
-    }),
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery"
     })
   ]
 };
