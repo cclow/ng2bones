@@ -26,12 +26,14 @@ module.exports = webpackMerge(commonConfig, {
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({
+      beautify: false,
       mangle: {
         keep_fnames: true
       },
       compress: {
         warnings: false,
       },
+      comments: false,
     }),
     new ExtractTextPlugin('[name].[hash].css'),
     new webpack.DefinePlugin({
