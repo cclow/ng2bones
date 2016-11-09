@@ -50,6 +50,8 @@ module.exports = {
     }),
     // Insert bundles into index.html
     new HtmlPlugin({
+      hash: true,
+      favicon: 'src/favicon.ico',
       template: 'src/index.html'
     }),
     new webpack.ProvidePlugin({
